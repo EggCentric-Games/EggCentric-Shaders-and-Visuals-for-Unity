@@ -6,7 +6,7 @@ namespace EggCentric.AtmosphericScattering
     public class AtmosphereSimulationConfig : ScriptableObject
     {
         [Header("References")]
-        [SerializeField] protected Material targetMaterial;
+        [SerializeReference] protected Material targetMaterial;
 
         [Header("Target Parameter Names")]
         [SerializeField] private string _rayleighCoefficientsParameterName = "_RayleighScatterCoefficients";

@@ -1,6 +1,12 @@
-#include "../Utilities/Static/Constants.hlsl"
-#include "../Utilities/Geometry/SphereIntersection.hlsl"
-#include "../Utilities/Evaluation/PhaseFunctions.hlsl"
+#if defined(SHADERGRAPH_PREVIEW)
+    #include "Packages/com.eggcentric.atmospheric_scattering/Runtime/Shaders/Utilities/Constants.hlsl"
+    #include "Packages/com.eggcentric.atmospheric_scattering/Runtime/Shaders/Utilities/SphereIntersection.hlsl"
+    #include "Packages/com.eggcentric.atmospheric_scattering/Runtime/Shaders/Utilities/PhaseFunctions.hlsl"
+#else
+    #include "../Utilities/Static/Constants.hlsl"
+    #include "../Utilities/Geometry/SphereIntersection.hlsl"
+    #include "../Utilities/Evaluation/PhaseFunctions.hlsl"
+#endif
 
 //UNITY_SHADER_NO_UPGRADE
 #ifndef ATMOSPHERE_SIMULATION_INCLUDED

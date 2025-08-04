@@ -1,4 +1,8 @@
-#include "../Static/Constants.hlsl"
+#if defined(SHADERGRAPH_PREVIEW)
+    #include "Packages/com.eggcentric.atmospheric_scattering/Runtime/Shaders/Utilities/Static/Constants.hlsl"
+#else
+    #include "../Static/Constants.hlsl"
+#endif
 
 //UNITY_SHADER_NO_UPGRADE
 #ifndef SPHERE_INTERSECTION_INCLUDED
