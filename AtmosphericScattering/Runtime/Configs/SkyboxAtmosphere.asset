@@ -22,7 +22,7 @@ MonoBehaviour:
   _moonPositionParameterName: _MoonDirection
   _moonOrbit:
     _axialTilt: -17
-    _angleOffset: 85
+    _angleOffset: 61
     _angularSpeed: 0
     _mainAxis: {x: 0, y: 0.9563047, z: -0.29237172}
-    _rawBodyPosition: {x: 0, y: 0.3746067, z: 0.9271837}
+    _rawBodyPosition: {x: 0, y: 0.7193398, z: 0.69465834}
