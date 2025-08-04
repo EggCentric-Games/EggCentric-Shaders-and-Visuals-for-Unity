@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f164c0625bc8eea48a70d2b8bc0be81a, type: 3}
+  m_Script: {fileID: 11500000, guid: 60c2f497473af7740b070213a9018102, type: 3}
   m_Name: SkyboxAtmosphere
   m_EditorClassIdentifier: 
   targetMaterial: {fileID: 2100000, guid: daeb04504da29274d916b25630ad94a7, type: 2}
@@ -19,3 +19,10 @@ MonoBehaviour:
   _scatterBase: 300
   _rayleighScatterStrength: 0.0002
   _mieScatterStrength: 0.000002
+  _moonPositionParameterName: _MoonDirection
+  _moonOrbit:
+    _axialTilt: -17
+    _angleOffset: 85
+    _angularSpeed: 0
+    _mainAxis: {x: 0, y: 0.9563047, z: -0.29237172}
+    _rawBodyPosition: {x: 0, y: 0.3746067, z: 0.9271837}

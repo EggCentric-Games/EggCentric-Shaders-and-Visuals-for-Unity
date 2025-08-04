@@ -5,7 +5,6 @@ namespace EggCentric.AtmosphericScattering
     [CreateAssetMenu(fileName = "ProceduralSkyboxConfig", menuName = "EggCentric/Atmosphere/Skybox/Config")]
     public class ProceduralSkyboxConfig : AtmosphereSimulationConfig
     {
-
         [Header("Celestial Bodies")]
         [SerializeField] private string _moonPositionParameterName = "_MoonDirection";
         [SerializeField] private Orbit _moonOrbit;
