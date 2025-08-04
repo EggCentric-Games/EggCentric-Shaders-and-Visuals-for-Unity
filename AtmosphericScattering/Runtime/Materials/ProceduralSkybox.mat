@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5213884131144416188
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ProceduralSkybox
+  m_Shader: {fileID: -6465566751694194690, guid: e58f755485206ba4e8acfae33c67f1f8, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyboxGradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: 60111342e9c4ab64193184eefb922f6c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AerosoleDensity: 1
+    - _AerosoleDensityFalloff: 49
+    - _AirDensity: 1
+    - _AirDensityFalloff: 6.3
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _AngularSpeed: 15
+    - _AtmosphereDensity: 1
+    - _AtmosphereThickness: 60000
+    - _AxialTilt: 40
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Curvature: 0
+    - _Cutoff: 0.5
+    - _Density: 125
+    - _DensityFalloff: 15
+    - _DepthPrecision: 5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DiscSize: 0.02
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EnvironmentReflections: 1
+    - _Epsilon: 0.000001
+    - _Float: 0.71
+    - _Float_1: -47.6
+    - _GaloSize: 0.01
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _GroundBlendDistance: 0.1
+    - _GroundBlendSharpness: -0.5
+    - _HaloSize: 0.0000001
+    - _HorizonBlendDistance: 0.5
+    - _HorizonBlendSharpness: -0.7
+    - _Intensity: 0.2
+    - _Intensity_Correction: 0
+    - _Metallic: 0
+    - _MoonRelativeBrightess: 0.12
+    - _MoonSize: 0.005
+    - _NoiseDensity: 500
+    - _OcclusionStrength: 1
+    - _OrbitAngle: 90
+    - _OrbitalSpeed: 10
+    - _Parallax: 0.005
+    - _PlanetRadius: 6360000
+    - _PlanetSize: 100
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _ReflectedLightPercent: 0.12
+    - _RelativeBrightness: 0.01
+    - _ScatterPrecision: 25
+    - _Size: 1.15
+    - _SkyBlendDistance: 1
+    - _SkyBlendSharpness: -0.25
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SparkeSpeed: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _StarDensity: 500
+    - _StarIntensity: 10
+    - _StarsRelativeBrightness: 0.01
+    - _SunBrightness: 1
+    - _SunDiscSize: 0
+    - _SunGaloSize: 0
+    - _SunRelativeBrightness: 1
+    - _SunSize: 0.005
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BMultiplier: {r: 0, g: 0, b: 1, a: 1}
+    - _BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color_1: {r: 0, g: 1, b: 0, a: 1}
+    - _Color_2: {r: 0, g: 0, b: 1, a: 1}
+    - _DensityRange: {r: 0.8, g: 0.95, b: 0, a: 0}
+    - _Deviation: {r: 1, g: 5, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GMultiplier: {r: 0, g: 1, b: 0, a: 1}
+    - _GroundColor: {r: 0.03529412, g: 0.14117648, b: 0.20784315, a: 1}
+    - _HaloColor: {r: 1024, g: 262.70157, b: 0, a: 1}
+    - _HorizonColor: {r: 0.7725491, g: 0.882353, b: 0.95294124, a: 1}
+    - _Intensity: {r: 0, g: 0.6, b: 0, a: 0}
+    - _MieScatterCoefficients: {r: 0.000002, g: 0.000002, b: 0.000002, a: 0}
+    - _MoonDirection: {r: 0, g: 0.7313537, b: 0.6819983, a: 0}
+    - _RMultiplier: {r: 1, g: 0, b: 0, a: 1}
+    - _RayleighScatterCoefficients: {r: 0.000006747189, g: 0.000018228231, b: 0.000043221946, a: 0}
+    - _ScatterCoefficients: {r: 0.0000047892154, g: 0.000011190494, b: 0.000027320542, a: 0}
+    - _Size: {r: 10, g: 1, b: 0, a: 0}
+    - _SkyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SparkeSpeed: {r: 0.5, g: 1, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _StarSize: {r: 30, g: 1, b: 0, a: 0}
+    - _SunColor: {r: 11.984314, g: 6.967591, b: 0, a: 1}
+    - _Vector2: {r: 0.01, g: 0.8, b: 0, a: 0}
+    - _Wavelengths: {r: 700, g: 530, b: 440, a: 0}
+    - _bMultiplier: {r: 0, g: 0, b: 1, a: 1}
+    - _gMultiplier: {r: 0, g: 1, b: 0, a: 1}
+    - _rMultiplier: {r: 1, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
