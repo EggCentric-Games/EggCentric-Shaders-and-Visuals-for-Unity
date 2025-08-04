@@ -199,7 +199,7 @@ Material:
     - _HorizonColor: {r: 0.7725491, g: 0.882353, b: 0.95294124, a: 1}
     - _Intensity: {r: 0, g: 0.6, b: 0, a: 0}
     - _MieScatterCoefficients: {r: 0.000002, g: 0.000002, b: 0.000002, a: 0}
-    - _MoonDirection: {r: 0, g: 0.601815, b: 0.79863554, a: 0}
+    - _MoonDirection: {r: 0, g: 0.7313537, b: 0.6819983, a: 0}
     - _RMultiplier: {r: 1, g: 0, b: 0, a: 1}
     - _RayleighScatterCoefficients: {r: 0.000006747189, g: 0.000018228231, b: 0.000043221946, a: 0}
     - _ScatterCoefficients: {r: 0.0000047892154, g: 0.000011190494, b: 0.000027320542, a: 0}
