@@ -5,6 +5,13 @@
   "description": "Pack of highly customizable atmospheric scattering shaders",
   "unity": "2022.3",
   "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "Contains scene demonstrating the possibilities of the asset",
+      "path": "Samples~/Demo"
+    }
+  ],
   "author": {
     "name": "HummeL",
     "email": "arian.lukianiuk@gmail.com",
