@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18ba5c909af4f3478fd64ede1c522aa, type: 3}
+  m_Name: FOV Scope Config
+  m_EditorClassIdentifier: 
+  _sightPrefab: {fileID: -2392238125080331666, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
+  _magnificationConfig: {fileID: 11400000, guid: 89f767574beba914d88174d22dff7e58, type: 2}
+  _adsSettings:
+    AdsPosition: {x: 0, y: -0.1425, z: 0.2}
+    AdsTime: 0.2
+    PostAdsFOV: 15

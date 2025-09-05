@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18ba5c909af4f3478fd64ede1c522aa, type: 3}
+  m_Name: Holographic Config
+  m_EditorClassIdentifier: 
+  _sightPrefab: {fileID: 7844775263074653691, guid: 2a9f54c09cb07e84bade36b1570f16c7, type: 3}
+  _magnificationConfig: {fileID: 11400000, guid: 5f1845905ff040b4fb287fd010cb7f17, type: 2}
+  _adsSettings:
+    AdsPosition: {x: 0, y: -0.16, z: 0.1}
+    AdsTime: 0.1
+    PostAdsFOV: 50
