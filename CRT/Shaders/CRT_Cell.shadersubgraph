@@ -495,10 +495,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -432.0,
-            "y": -526.3999633789063,
-            "width": 109.60000610351563,
-            "height": 33.5999755859375
+            "x": -415.1999816894531,
+            "y": -480.0,
+            "width": 108.79998779296875,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -591,10 +591,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -408.48004150390627,
-            "y": -418.5999450683594,
-            "width": 0.0,
-            "height": 0.0
+            "x": -392.0,
+            "y": -371.9999694824219,
+            "width": 92.0,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -669,10 +669,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -237.60000610351563,
-            "y": -563.199951171875,
-            "width": 183.19998168945313,
-            "height": 246.39996337890626
+            "x": -220.79998779296876,
+            "y": -516.7999877929688,
+            "width": 183.1999969482422,
+            "height": 246.4000244140625
         }
     },
     "m_Slots": [
@@ -724,13 +724,13 @@
     "m_Name": "",
     "m_ChildObjectList": [
         {
+            "m_Id": "9cf1b7d67af7439f82ce5ab68b68e29c"
+        },
+        {
             "m_Id": "f6811bd146d248608d1cab074d278684"
         },
         {
             "m_Id": "aa27a1e8310e4247848b5e2711e64b4a"
-        },
-        {
-            "m_Id": "9cf1b7d67af7439f82ce5ab68b68e29c"
         },
         {
             "m_Id": "a9fb18dfd388440a8c03e81e1726aa81"
@@ -743,7 +743,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "75357b7ae11c4089ab502ded37af1398",
     "m_Id": 0,
-    "m_DisplayName": "Main",
+    "m_DisplayName": "GridMask",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -928,10 +928,10 @@
     "m_Guid": {
         "m_GuidSerialized": "530f741f-5805-42a0-8b81-efb8c809ffa9"
     },
-    "m_Name": "Input",
+    "m_Name": "BackgroundColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Input",
-    "m_DefaultReferenceName": "_Input",
+    "m_RefNameGeneratedByDisplayName": "BackgroundColor",
+    "m_DefaultReferenceName": "_BackgroundColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -967,7 +967,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "a09649d87ca94b3e9ea732e05a4f1311",
     "m_Id": 0,
-    "m_DisplayName": "Input",
+    "m_DisplayName": "BackgroundColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1377,10 +1377,10 @@
     "m_Guid": {
         "m_GuidSerialized": "c1b963ff-6132-4b25-a745-9dc3efb6c420"
     },
-    "m_Name": "Main",
+    "m_Name": "GridMask",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Main",
-    "m_DefaultReferenceName": "_Main",
+    "m_RefNameGeneratedByDisplayName": "GridMask",
+    "m_DefaultReferenceName": "_GridMask",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
