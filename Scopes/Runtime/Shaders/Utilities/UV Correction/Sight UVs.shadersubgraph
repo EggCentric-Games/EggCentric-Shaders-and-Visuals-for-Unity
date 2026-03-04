@@ -183,10 +183,10 @@
     },
     "m_Slots": [
         {
-            "m_Id": "1d3f557a9a864d3f9c82bd34b6b0e790"
+            "m_Id": "22e7dee5246845b29af1af2cf3000199"
         },
         {
-            "m_Id": "e971130cb306436eb3f86fbca6d07e3a"
+            "m_Id": "eee3b584693a4337ac9343d857dfec76"
         }
     ],
     "synonyms": [],
@@ -246,12 +246,12 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "1d3f557a9a864d3f9c82bd34b6b0e790",
+    "m_ObjectId": "22e7dee5246845b29af1af2cf3000199",
     "m_Id": 0,
-    "m_DisplayName": "Flat_Object_Space",
+    "m_DisplayName": "Absolute_UV",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "Flat_Object_Space",
+    "m_ShaderOutputName": "Absolute_UV",
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
@@ -357,7 +357,7 @@
     "m_Title": "Normalization by Radius",
     "m_Position": {
         "x": -664.0,
-        "y": -223.199951171875
+        "y": -223.2000732421875
     }
 }
 
@@ -631,8 +631,8 @@
     "m_ObjectId": "dc366c008a02463d93526dc71d072186",
     "m_Title": "Flat Object-Space Coords",
     "m_Position": {
-        "x": 10.0,
-        "y": 10.0
+        "x": -908.7999877929688,
+        "y": -464.0
     }
 }
 
@@ -675,12 +675,12 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "e971130cb306436eb3f86fbca6d07e3a",
+    "m_ObjectId": "eee3b584693a4337ac9343d857dfec76",
     "m_Id": 1,
-    "m_DisplayName": "Normalized_Object_Space",
+    "m_DisplayName": "Lens_Relative_UV",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "Normalized_Object_Space",
+    "m_ShaderOutputName": "Lens_Relative_UV",
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
