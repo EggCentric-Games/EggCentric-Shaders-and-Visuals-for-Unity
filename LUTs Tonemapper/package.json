@@ -1,0 +1,15 @@
+{
+  "name": "com.eggcentric.tonemapping",
+  "version": "0.1.0",
+  "displayName": "EggCentric Tonemapping",
+  "description": "",
+  "unity": "2022.3",
+  "dependencies": {},
+  "samples": [
+  ],
+  "author": {
+    "name": "HummeL",
+    "email": "arian.lukianiuk@gmail.com",
+    "url": "https://github.com/Hummel-AL"
+  }
+}
