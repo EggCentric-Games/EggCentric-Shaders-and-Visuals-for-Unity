@@ -76,6 +76,7 @@ Material:
     m_Floats:
     - USE_PRERENDERED_TEXTURE: 1
     - _AberrationFalloff: 0.2
+    - _CoatSmoothness: 0
     - _CoatStrength: 0
     - _Distortion: 5
     - _EmissionMultiplier: -2.27
@@ -83,7 +84,7 @@ Material:
     - _FishEyeStrength: 3
     - _Float: 1
     - _FresnelBrightness: 1
-    - _FresnelPower: 3
+    - _FresnelPower: 1.5
     - _ISINVERTED: 1
     - _IsInverted: 1
     - _IsMagnified: 1
@@ -99,7 +100,7 @@ Material:
     - _Smoothness: 0.8
     - _SmoothnessStrength: 1
     - _StartHue: 0.76
-    - _ThicknessMultiplier: 0.35
+    - _ThicknessMultiplier: 15
     - _TubeRadius: 0.25
     - _TubeSmoothness: 0.2
     - _USECHROMATICABERRATION: 1

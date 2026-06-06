@@ -51,10 +51,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - USE_PRERENDERED_TEXTURE: 0
     - _Brightness: 300
     - _CoatSmoothness: 1
+    - _CoatStrength: 0
     - _EyeRelief: -0.06
-    - _FresnelBrightness: 5
+    - _FresnelBrightness: 3
     - _FresnelPower: 2.5
     - _ISINVERTED: 0
     - _IsInverted: 0
@@ -64,8 +66,9 @@ Material:
     - _RefractionStrength: 0
     - _Scale: 0.0001
     - _ScopeShadowFalloff: 0.2
+    - _SmoothnessStrength: 1
     - _StartHue: 0.98
-    - _ThicknessMultiplier: 0.35
+    - _ThicknessMultiplier: 16
     - _TubeLength: 0.625
     - _TubeRadius: 0.06
     - _TubeSmoothness: 1
@@ -79,4 +82,5 @@ Material:
     - _NoiseColor: {r: 0, g: 0, b: 0, a: 0}
     - _TargetOffset: {r: 0, g: 0, b: 0, a: 0}
     - _TubeColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WaveOffsets: {r: 0.12, g: 0.2, b: 0.66, a: 0}
   m_BuildTextureStacks: []
