@@ -52,7 +52,7 @@ Material:
     - _CoatingThickness: 90
     - _Smoothness: 0.825
     m_Colors:
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 0.5204343, g: 0.55389786, b: 0.6226415, a: 1}
     - _WaveLengths: {r: 746, g: 500, b: 440, a: 0}
     - _WaveOffsets: {r: 0.16, g: 0.44, b: 0.22, a: 0}
   m_BuildTextureStacks: []

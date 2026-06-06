@@ -5,6 +5,7 @@ using UnityEngine.Rendering.Universal;
 public class TonemapRendererFeature : ScriptableRendererFeature
 {
     [SerializeField] private Material _material;
+    [SerializeField] private RenderPassEvent _renderPassEvent;
     private TonemapRenderPass _tonemapRenderPass;
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
@@ -22,7 +23,7 @@ public class TonemapRendererFeature : ScriptableRendererFeature
             return;
 
         _tonemapRenderPass = new TonemapRenderPass(_material);
-        _tonemapRenderPass.renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
+        _tonemapRenderPass.renderPassEvent = _renderPassEvent;
     }
     public override void SetupRenderPasses(ScriptableRenderer renderer, in RenderingData renderingData)
     {
