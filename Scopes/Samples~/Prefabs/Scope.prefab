@@ -84,7 +84,7 @@ MonoBehaviour:
     CameraOffset: {x: 0, y: 0.0315, z: 0.151}
     LayerMask:
       serializedVersion: 2
-      m_Bits: 119
+      m_Bits: 55
 --- !u!1001 &1711827486869773080
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -69,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TintMap:
-        m_Texture: {fileID: 2800000, guid: 555001e366a429b47b02e7c978d8fcbf, type: 3}
+        m_Texture: {fileID: 2800000, guid: e7a4b25877a248044bcbaa3bb16a338e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -106,14 +106,14 @@ Material:
     - _USECHROMATICABERRATION: 1
     - _Value: 0.75
     - _What: 0.4
-    - _Zeroing: 0.1
+    - _Zeroing: 0.175
     - _gCorrection: -0.29
     - _rCorrection: -0.46
     m_Colors:
     - _AberrationCoefficients: {r: -0.05, g: 0.05, b: 0, a: 0}
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LensTint: {r: 1, g: 1, b: 1, a: 0}
+    - _LensTint: {r: 1, g: 1, b: 1, a: 1}
     - _LightColor: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColor: {r: 0, g: 0, b: 0, a: 0}
     - _SolidColor: {r: 1, g: 0.081131995, b: 0.081131995, a: 1}

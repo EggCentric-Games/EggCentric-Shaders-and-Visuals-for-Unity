@@ -26,18 +26,23 @@ namespace EggCentric.Sights
             Clear();
         }
 
+        protected virtual void Update()
+        {
+            _viewRenderCamera.transform.position = Camera.main.transform.position;
+        }
+
         private void RecreateSetup()
         {
-            RenderTexture outputTexture = CreateRenderTexture(_renderSettings.TextureResolution);
+            RenderTexture outputTexture = CreateRenderTexture(_renderSettings.TextureResolution, Camera.main.aspect);
             _viewRenderCamera = CreateCamera(_renderSettings.CameraOffset, outputTexture);
 
             lensRenderer.material.SetKeyword(new LocalKeyword(lensRenderer.material.shader, "USE_PRERENDERED_TEXTURE_ON"), true);
             lensRenderer.material.SetTexture("_PrerenderedView", outputTexture);
         }
 
-        private RenderTexture CreateRenderTexture(int textureSize)
+        private RenderTexture CreateRenderTexture(int textureSize, float ratio = 1f)
         {
-            RenderTexture outputTexture = new RenderTexture(textureSize, textureSize, 0, UnityEngine.Experimental.Rendering.GraphicsFormat.R32G32B32A32_SFloat);
+            RenderTexture outputTexture = new RenderTexture(textureSize, (int)(textureSize / ratio), 0, UnityEngine.Experimental.Rendering.GraphicsFormat.R32G32B32A32_SFloat);
 
             return outputTexture;
         }

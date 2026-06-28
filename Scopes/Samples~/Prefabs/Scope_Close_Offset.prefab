@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2392238125080331666, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: _renderSettings.LayerMask.m_Bits
-      value: 183
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 1945779160946468425, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2696619214725821220, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 239df7fd4b222044a8b81745a5d7ac8c, type: 2}
     - target: {fileID: 2790694313775458626, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4054135883892478465, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,11 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4164889847329749762, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4464366009123591134, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7228662350242376763, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Name
@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7228662350242376763, guid: ac0f4d433bba9ec46a611d3486c9f3d0, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

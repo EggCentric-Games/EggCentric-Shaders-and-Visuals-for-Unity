@@ -52,6 +52,7 @@ Material:
     m_Ints: []
     m_Floats:
     - USE_PRERENDERED_TEXTURE: 0
+    - _AngleInfluence: 0
     - _Brightness: 300
     - _CoatSmoothness: 1
     - _CoatStrength: 0

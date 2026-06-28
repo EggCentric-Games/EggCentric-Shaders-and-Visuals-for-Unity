@@ -48,6 +48,15 @@ namespace EggCentric.Sights
 
             _currentSight = Instantiate(config.Prefab, _sightSlot);
             _currentSight.SetConfig(config.MagnificationConfig);
+            SetLayerRecursively(_currentSight.gameObject, LayerMask.NameToLayer("Scope"));
+        }
+
+        private void SetLayerRecursively(GameObject obj, int layer)
+        {
+            obj.layer = layer;
+
+            foreach (Transform child in obj.transform)
+                SetLayerRecursively(child.gameObject, layer);
         }
     }
 }

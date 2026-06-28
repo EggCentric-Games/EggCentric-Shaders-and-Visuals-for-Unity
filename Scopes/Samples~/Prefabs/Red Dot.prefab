@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2413305903928217883}
   - component: {fileID: -4314035462876615692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Red Dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lensRenderer: {fileID: 0}
-  magnificationConfig: {fileID: 11400000, guid: f359bab88cc4030459d9609766254b0c, type: 2}
 --- !u!1 &8750007293623720382
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7597958744433130820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,17 +126,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7863410404770700334, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -7770893261028311924, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 45d010d562e5a6f419341946040244f1, type: 2}
+    - target: {fileID: -720540275868161518, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
       propertyPath: m_Name
       value: Sight_Red_Dot
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 924589097821305500, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279539387017222630, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5444911481339066107, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619785569916830247, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6531882452525602836, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205028084309972426, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379681911648410654, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547849835734414091, guid: 677b6ec2c7a94e944aab63b0bff64b6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
