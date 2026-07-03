@@ -43,6 +43,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _EyeRelief: 0.05
+    - _LensRadius: 999
+    - _Zeroing: 7.5
     m_Colors:
     - _ViewAngles: {r: 0, g: 22, b: 0, a: 0}
   m_BuildTextureStacks: []

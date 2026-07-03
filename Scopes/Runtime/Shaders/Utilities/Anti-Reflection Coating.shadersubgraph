@@ -215,6 +215,20 @@
             },
             "m_InputSlot": {
                 "m_Node": {
+                    "m_Id": "7629b8fc816542aa8cf1e408eb1ea170"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "8e68abdbefba4a04988965e153d9a64f"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
                     "m_Id": "eb8a2ef7c72d437989e42ca3c47c37f7"
                 },
                 "m_SlotId": 1
@@ -384,20 +398,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "2cab12fc841345c88719924b2423f797"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "eb8a2ef7c72d437989e42ca3c47c37f7"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "7629b8fc816542aa8cf1e408eb1ea170"
                 },
                 "m_SlotId": 1
             }
@@ -932,8 +932,8 @@
     "m_ObjectId": "40b0ebcba65a45d8ab980d957e7c2d06",
     "m_Title": "Light Interaction",
     "m_Position": {
-        "x": -755.2000732421875,
-        "y": -860.0000610351563
+        "x": -755.2000122070313,
+        "y": -860.0
     }
 }
 
@@ -990,8 +990,8 @@
     "m_ObjectId": "5303351f95f14175a6e12c030cd8aaf6",
     "m_Title": "Intensity",
     "m_Position": {
-        "x": -955.2000732421875,
-        "y": -620.8001708984375
+        "x": -955.2000122070313,
+        "y": -620.800048828125
     }
 }
 
@@ -1054,7 +1054,7 @@
     "m_Title": "Raw Color",
     "m_Position": {
         "x": -1424.0,
-        "y": -887.199951171875
+        "y": -887.1998901367188
     }
 }
 
@@ -2544,7 +2544,7 @@
     "m_Title": "Hue Offset",
     "m_Position": {
         "x": -2505.60009765625,
-        "y": -896.0000610351563
+        "y": -896.0
     }
 }
 

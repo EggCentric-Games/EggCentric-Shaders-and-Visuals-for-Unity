@@ -6,6 +6,8 @@ namespace EggCentric.Sights
 {
     public class Sight : MonoBehaviour
     {
+        public Camera ReferenceCamera { get; set; }
+
         [SerializeField] protected MeshRenderer lensRenderer;
 
         private Magnifier _magnifier;

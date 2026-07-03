@@ -106,7 +106,7 @@ Material:
     - _USECHROMATICABERRATION: 1
     - _Value: 0.75
     - _What: 0.4
-    - _Zeroing: 0.175
+    - _Zeroing: 7.5
     - _gCorrection: -0.29
     - _rCorrection: -0.46
     m_Colors:

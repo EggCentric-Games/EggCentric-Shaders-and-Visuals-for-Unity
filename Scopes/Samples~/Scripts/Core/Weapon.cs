@@ -47,8 +47,8 @@ namespace EggCentric.Sights
                 Destroy(_currentSight.gameObject);
 
             _currentSight = Instantiate(config.Prefab, _sightSlot);
+            _currentSight.ReferenceCamera = Camera.main;
             _currentSight.SetConfig(config.MagnificationConfig);
-            SetLayerRecursively(_currentSight.gameObject, LayerMask.NameToLayer("Scope"));
         }
 
         private void SetLayerRecursively(GameObject obj, int layer)

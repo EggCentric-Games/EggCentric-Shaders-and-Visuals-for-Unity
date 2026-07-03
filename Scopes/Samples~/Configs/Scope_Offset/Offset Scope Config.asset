@@ -17,4 +17,4 @@ MonoBehaviour:
   _adsSettings:
     AdsPosition: {x: 0, y: -0.1425, z: 0.1}
     AdsTime: 0.2
-    PostAdsFOV: 50
+    PostAdsFOV: 32

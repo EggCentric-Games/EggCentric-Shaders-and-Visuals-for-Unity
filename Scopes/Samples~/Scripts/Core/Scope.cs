@@ -6,6 +6,7 @@ namespace EggCentric.Sights
     public class Scope : Sight
     {
         [SerializeField] private SightRenderSettings _renderSettings;
+
         private Camera _viewRenderCamera;
 
         protected override void SetMagnification(float magnification)
@@ -14,10 +15,21 @@ namespace EggCentric.Sights
             base.SetMagnification(magnification);
         }
 
+        protected virtual void SetFovScale(float fovScale) => lensRenderer.material.SetFloat("_FOVScale", fovScale);
+
         protected override void OnEnable()
         {
             base.OnEnable();
             RecreateSetup();
+
+            var angleA = 60f * Mathf.Deg2Rad;
+            var angleB = 32f * Mathf.Deg2Rad;
+            Debug.Log($"Bruteforce:\nSin: {Mathf.Sin(angleA)/Mathf.Sin(angleB)}\nCos: {Mathf.Cos(angleA) / Mathf.Cos(angleB)}\nTan: {Mathf.Tan(angleA) / Mathf.Tan(angleB)}\nCtg: {(1f / Mathf.Tan(angleA)) / (1f / Mathf.Tan(angleB))}\n");
+
+
+            angleA /= 2f;
+            angleB /= 2f;
+            Debug.Log($"Bruteforce (half):\nSin: {Mathf.Sin(angleA) / Mathf.Sin(angleB)}\nCos: {Mathf.Cos(angleA) / Mathf.Cos(angleB)}\nTan: {Mathf.Tan(angleA) / Mathf.Tan(angleB)}\nCtg: {(1f / Mathf.Tan(angleA)) / (1f / Mathf.Tan(angleB))}\n");
         }
 
         protected override void OnDisable()
@@ -28,7 +40,24 @@ namespace EggCentric.Sights
 
         protected virtual void Update()
         {
-            _viewRenderCamera.transform.position = Camera.main.transform.position;
+            if(ReferenceCamera == null)
+                ReferenceCamera = Camera.main;
+
+            _viewRenderCamera.transform.position = ReferenceCamera.transform.position;
+            _viewRenderCamera.transform.rotation = ReferenceCamera.transform.rotation;
+
+            var fovScale = GetFovScale(ReferenceCamera.fieldOfView / 2f, _renderSettings.PlayerFOV / 2f);
+            SetFovScale(fovScale);
+        }
+
+        private float GetFovScale(float referenceFov, float currentFov)
+        {
+            Debug.Log($"Reference: {referenceFov} - Current: {currentFov}");
+
+            referenceFov *= Mathf.Deg2Rad;
+            currentFov *= Mathf.Deg2Rad;
+            float scaleViaTangent = Mathf.Tan(referenceFov) / Mathf.Tan(currentFov);
+            return scaleViaTangent;
         }
 
         private void RecreateSetup()
