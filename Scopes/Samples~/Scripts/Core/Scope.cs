@@ -8,10 +8,11 @@ namespace EggCentric.Sights
         [SerializeField] private SightRenderSettings _renderSettings;
 
         private Camera _viewRenderCamera;
+        private float _magnification = 1f;
 
         protected override void SetMagnification(float magnification)
         {
-            _viewRenderCamera.fieldOfView = FovUtilities.GetMagnifiedFOV(_renderSettings.PlayerFOV, magnification);
+            _magnification = magnification; // _viewRenderCamera.fieldOfView = FovUtilities.GetMagnifiedFOV(_renderSettings.PlayerFOV, magnification);
             base.SetMagnification(magnification);
         }
 
@@ -21,15 +22,6 @@ namespace EggCentric.Sights
         {
             base.OnEnable();
             RecreateSetup();
-
-            var angleA = 60f * Mathf.Deg2Rad;
-            var angleB = 32f * Mathf.Deg2Rad;
-            Debug.Log($"Bruteforce:\nSin: {Mathf.Sin(angleA)/Mathf.Sin(angleB)}\nCos: {Mathf.Cos(angleA) / Mathf.Cos(angleB)}\nTan: {Mathf.Tan(angleA) / Mathf.Tan(angleB)}\nCtg: {(1f / Mathf.Tan(angleA)) / (1f / Mathf.Tan(angleB))}\n");
-
-
-            angleA /= 2f;
-            angleB /= 2f;
-            Debug.Log($"Bruteforce (half):\nSin: {Mathf.Sin(angleA) / Mathf.Sin(angleB)}\nCos: {Mathf.Cos(angleA) / Mathf.Cos(angleB)}\nTan: {Mathf.Tan(angleA) / Mathf.Tan(angleB)}\nCtg: {(1f / Mathf.Tan(angleA)) / (1f / Mathf.Tan(angleB))}\n");
         }
 
         protected override void OnDisable()
@@ -45,6 +37,7 @@ namespace EggCentric.Sights
 
             _viewRenderCamera.transform.position = ReferenceCamera.transform.position;
             _viewRenderCamera.transform.rotation = ReferenceCamera.transform.rotation;
+            _viewRenderCamera.fieldOfView = FovUtilities.GetMagnifiedFOV(ReferenceCamera.fieldOfView, _magnification);
 
             var fovScale = GetFovScale(ReferenceCamera.fieldOfView / 2f, _renderSettings.PlayerFOV / 2f);
             SetFovScale(fovScale);
