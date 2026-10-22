@@ -23,8 +23,8 @@ namespace EggCentric.Sights
             if (Input.GetKeyDown(_changeSightKey))
                 SwitchSight();
 
-            if (Input.GetMouseButtonDown(0))
-                _weapon.Shoot();
+            if (Input.GetMouseButton(0))
+                _weapon.TryToShoot();
 
             if (Input.GetMouseButtonDown(1))
                 _adsHandler.SwitchAds();

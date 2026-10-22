@@ -1,14 +1,14 @@
+using System.Collections;
 using UnityEngine;
 
-public class SimpleRecoil : MonoBehaviour
+public class SimpleRecoil : RecoilProvider
 {
-    [SerializeField] private Rigidbody _recoilBody;
     [SerializeField] private Vector3 _recoilApplicationPoint;
     [SerializeField] private Vector2 _minMaxLongitudinalRecoilForce;
     [SerializeField] private Vector2 _minMaxLateralRecoilForce;
     [SerializeField] private Vector2 _minMaxRecoilAngle;
 
-    public void ApplyRecoil()
+    public override void ApplyRecoil()
     {
         Vector3 recoil = GetRecoil();
         _recoilBody.AddForceAtPosition(recoil, _recoilBody.transform.TransformPoint(_recoilApplicationPoint));

@@ -5,8 +5,15 @@ namespace EggCentric.Sights
     public class Weapon : MonoBehaviour
     {
         public AdsSettings AdsSettings => _currentConfig.config.AdsSettings;
+        public bool IsReadyToShoot => _cooldown <= 0;
 
-        [SerializeField] private SimpleRecoil _recoil;
+        [SerializeField] private Transform _projectilePrefab;
+        [SerializeField] private Transform _barrel;
+        [SerializeField] private ParticleSystem _muzzleFlash;
+
+        [SerializeField] private SFXProvider _SFXProvider;
+        [SerializeField] private RPM _cooldownSelector;
+        [SerializeField] private RecoilProvider _recoil;
         [SerializeField] private Vector3 _defaultHandPosition;
         [SerializeField] private Transform _sightSlot;
         [SerializeField] private SightConfig[] _availableSights;
@@ -14,9 +21,16 @@ namespace EggCentric.Sights
         private Sight _currentSight;
         private (int id, SightConfig config) _currentConfig;
 
-        public void Shoot()
+        private float _cooldown;
+
+        public bool TryToShoot()
         {
-            _recoil.ApplyRecoil();
+            if(!IsReadyToShoot)
+                return false;
+
+            Shoot();
+            _cooldown = _cooldownSelector.GetCooldown();
+            return true;
         }
 
         public void ChangeSight()
@@ -31,6 +45,16 @@ namespace EggCentric.Sights
                 return;
 
             _currentSight.AdjustMagnification(input);
+        }
+
+        private void Update() => _cooldown -= Time.deltaTime;
+
+        private void Shoot()
+        {
+            _recoil.ApplyRecoil();
+            _SFXProvider.PlayShot();
+            PlayShotVFX();
+            CastBullet();
         }
 
         private void ChangeSight(int id)
@@ -57,6 +81,16 @@ namespace EggCentric.Sights
 
             foreach (Transform child in obj.transform)
                 SetLayerRecursively(child.gameObject, layer);
+        }
+
+        private void PlayShotVFX()
+        {
+            _muzzleFlash.Play();
+        }
+
+        private void CastBullet()
+        {
+            Instantiate(_projectilePrefab, _barrel.position, _barrel.rotation);
         }
     }
 }
