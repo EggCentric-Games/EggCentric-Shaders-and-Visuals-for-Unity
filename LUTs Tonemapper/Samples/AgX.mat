@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Lut_Texture:
-        m_Texture: {fileID: 11700000, guid: fb8e1b785dbc006198ed51bce6df33d9, type: 3}
+        m_Texture: {fileID: 11700000, guid: 5adb7b3394f4ec92698f2a82aeae0fc0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
